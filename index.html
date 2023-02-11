@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <title>Főoldal</title>
+    </head>
+    <body>
+        <!--Fejléc-->
+        <header>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4 logo">
+                            <span style="color: red;">Street</span> <span>food</span>
+                        </div>
+                        <nav class="col-12 col-md-8 menu">
+                            <a href="">Főoldal</a>
+                            <a href="">Étlap</a>
+                            <a href="">Rólunk</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--Első szekció-->
+        <section>
+            <div class="container-fluid wallpaper">
+                <h1>Köszöntjük weboldalunkon!</h1>
+                <form action="./database.php" method="post">
+                    <input  id="email" type="email" name="emailCim" value="E-mail" required>
+                    <input id="feliratkozas" type="submit" value="Feliratkozás">
+                </form>
+            </div>
+        </section>
+
+        <!--Második szekció-->
+        <section>
+            <div class="container">
+                <div class="row box">
+                    <div class="col-12 col-lg-4">
+                        <h2>Pizzák</h2>
+                        <img class="img-thumbnail" src="./Images/pizza.jpg">
+                        <br>
+                        <button class="tovabb">Tovább</button>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h2>Hamburgerek</h2>
+                        <img class="img-thumbnail" src="./Images/hamburger.jpg">
+                        <br>
+                        <button class="tovabb">Tovább</button>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h2>Saláták</h2>
+                        <img class="img-thumbnail" src="./Images/salata.jpg">
+                        <br>
+                        <button class="tovabb">Tovább</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Lábléc-->
+        <footer>
+            <div class="container-fluid lablec">
+                Copyright @ <span id="datum"></span>
+                <br>
+                Készítette: Gyurácz Olivér
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById("datum").innerHTML = new Date().getFullYear();
+        </script>
+    </body>
+</html>

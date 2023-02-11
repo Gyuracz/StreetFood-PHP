@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS streetfood;
+CREATE DATABASE streetfood;
+USE streetfood;
+CREATE TABLE subscribers(id INT PRIMARY KEY AUTO_INCREMENT, email VARCHAR(50) NOT NULL UNIQUE);
+SELECT * FROM subscribers ORDER BY id;
